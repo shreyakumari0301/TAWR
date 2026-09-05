@@ -1,0 +1,68 @@
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Secrets and local env
+.env
+.env.*
+!.env.example
+*.pem
+credentials.json
+
+# Checkpoints and large binaries
+checkpoints/*.pt
+checkpoints/*.pth
+checkpoints/*.ckpt
+*.pt
+*.pth
+*.onnx
+
+# Datasets
+data/*.npz
+data/*.pkl
+data/*.h5
+data/*.hdf5
+
+# Evaluation caches and logs
+results/tables/v3_runs/
+results/videos/
+*.log
+*.mp4
+*.avi
+
+# Figures can be regenerated; keep tables/json in repo
+results/figures/*.png
+
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+
+# LaTeX build
+*.aux
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.log
+paper.pdf
+output.pdf
+
+# Temp scripts
+scripts/_tmp_*.py
