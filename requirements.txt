@@ -1,0 +1,10 @@
+# Phase 1: environment loop
+mani_skill>=3.0.0
+gymnasium>=0.29.1
+numpy>=1.24
+pyyaml>=6.0
+tqdm>=4.66
+
+# Phase 2+: training and plots
+torch>=2.1
+matplotlib>=3.8

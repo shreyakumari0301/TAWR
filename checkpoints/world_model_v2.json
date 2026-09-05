@@ -1,0 +1,12 @@
+{
+  "path": "C:\\Users\\SK\\TAWR\\checkpoints\\world_model_v2.pt",
+  "ensemble_size": 5,
+  "weighted_loss": true,
+  "final_val_mse": [
+    0.008730075645421767,
+    0.009906894655926186,
+    0.010706090626254177,
+    0.01021379501107988,
+    0.01131274435766265
+  ]
+}

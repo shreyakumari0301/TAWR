@@ -1,0 +1,13 @@
+{
+  "method": "random",
+  "num_episodes": 100,
+  "success_rate": 0.02,
+  "success_count": 2,
+  "mean_return": 2.2540993901068576,
+  "std_return": 1.1157697721463349,
+  "mean_length": 50.0,
+  "steps_per_second": 36.99152866101738,
+  "observation_space": "Box(-inf, inf, (42,), float32)",
+  "action_space": "Box(-1.0, 1.0, (4,), float32)",
+  "seed": 0
+}

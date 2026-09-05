@@ -1,0 +1,14 @@
+# Policy-guided short-horizon MPC. Score = predicted reward + SAC terminal value - λU.
+horizon: 3
+num_candidates: 32
+action_noise_std: 0.15
+discount: 0.8
+uncertainty_coef: 0.0
+value_coef: 1.0
+policy_guided: true
+keep_policy_action: true
+adaptive_horizon: false
+horizon_schedule: [4, 3, 2, 1]
+confidence_threshold: 0.01
+eval_episodes: 200
+seed: 0

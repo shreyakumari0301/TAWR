@@ -1,0 +1,46 @@
+{
+  "rows": [
+    {
+      "horizon": 1,
+      "mse": 0.10320471972227097,
+      "tcp_pos_error_m": 0.01345997117459774,
+      "cube_pos_error_m": 0.017178891226649284,
+      "joint_abs_error": 0.012181002646684647,
+      "n": 1166
+    },
+    {
+      "horizon": 2,
+      "mse": 0.08935723453760147,
+      "tcp_pos_error_m": 0.022824164479970932,
+      "cube_pos_error_m": 0.029585963115096092,
+      "joint_abs_error": 0.020341547206044197,
+      "n": 1131
+    },
+    {
+      "horizon": 5,
+      "mse": 0.11944946646690369,
+      "tcp_pos_error_m": 0.04935977980494499,
+      "cube_pos_error_m": 0.0641806349158287,
+      "joint_abs_error": 0.04526247829198837,
+      "n": 1026
+    },
+    {
+      "horizon": 10,
+      "mse": 0.747865617275238,
+      "tcp_pos_error_m": 0.14129085838794708,
+      "cube_pos_error_m": 0.15042820572853088,
+      "joint_abs_error": 0.12050321698188782,
+      "n": 851
+    },
+    {
+      "horizon": 20,
+      "mse": 2541.108154296875,
+      "tcp_pos_error_m": 5.0336127281188965,
+      "cube_pos_error_m": 5.089290142059326,
+      "joint_abs_error": 5.217693328857422,
+      "n": 539
+    }
+  ],
+  "uncertainty_error_corr": 0.5696069971397296,
+  "figure": "C:\\Users\\SK\\TAWR\\results\\figures\\rollout_error.png"
+}

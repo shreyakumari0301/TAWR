@@ -1,0 +1,12 @@
+{
+  "path": "C:\\Users\\SK\\TAWR\\checkpoints\\world_model_v2_dagger.pt",
+  "ensemble_size": 5,
+  "weighted_loss": true,
+  "final_val_mse": [
+    0.009375021590602575,
+    0.006326852328388426,
+    0.006229918845756147,
+    0.0063737316219228774,
+    0.0068595582207163245
+  ]
+}

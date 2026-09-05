@@ -1,0 +1,289 @@
+{
+  "episodes": 200,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "matrix": [
+    {
+      "n": 400,
+      "success_count": 264,
+      "success_rate": 0.66,
+      "success_ci95_bootstrap": [
+        0.6125,
+        0.7075
+      ],
+      "success_ci95_wilson": [
+        0.6122507874202215,
+        0.7047051675878807
+      ],
+      "mean_return": 13.954382490133867,
+      "return_ci95": [
+        13.180155815731968,
+        14.730043759780239
+      ],
+      "mean_length": 29.7425,
+      "mean_latency_s": 0.001811015617745159,
+      "p95_latency_s": 0.005966340028680861,
+      "method": "SAC",
+      "seed_success_rates": [
+        0.645,
+        0.675
+      ],
+      "seed_mean": 0.66,
+      "seed_std": 0.015000000000000013,
+      "failure_counts": {
+        "bad_placement": 103,
+        "success": 264,
+        "bad_lift": 18,
+        "failed_grasp": 2,
+        "drop_after_grasp": 12,
+        "bad_transport": 1
+      },
+      "n_seeds": 2
+    },
+    {
+      "n": 400,
+      "success_count": 2,
+      "success_rate": 0.005,
+      "success_ci95_bootstrap": [
+        0.0,
+        0.0125
+      ],
+      "success_ci95_wilson": [
+        0.0013722242215711451,
+        0.018045289972112716
+      ],
+      "mean_return": 2.3713107883564604,
+      "return_ci95": [
+        2.261466100281964,
+        2.479205874949171
+      ],
+      "mean_length": 50.0,
+      "mean_latency_s": 0.01242607731006574,
+      "p95_latency_s": 0.024804415029939242,
+      "method": "Single WM-MPC",
+      "seed_success_rates": [
+        0.01,
+        0.0
+      ],
+      "seed_mean": 0.005,
+      "seed_std": 0.005,
+      "failure_counts": {
+        "failed_approach": 352,
+        "failed_grasp": 44,
+        "success": 2,
+        "drop_after_grasp": 2
+      },
+      "n_seeds": 2
+    },
+    {
+      "n": 400,
+      "success_count": 223,
+      "success_rate": 0.5575,
+      "success_ci95_bootstrap": [
+        0.5075,
+        0.605
+      ],
+      "success_ci95_wilson": [
+        0.5085070928349432,
+        0.6053989534960934
+      ],
+      "mean_return": 15.645926162668948,
+      "return_ci95": [
+        14.979359365416485,
+        16.314073240898956
+      ],
+      "mean_length": 36.95,
+      "mean_latency_s": 0.010504141555395209,
+      "p95_latency_s": 0.016466900007799268,
+      "method": "Policy-guided WM",
+      "seed_success_rates": [
+        0.565,
+        0.55
+      ],
+      "seed_mean": 0.5575,
+      "seed_std": 0.007499999999999951,
+      "failure_counts": {
+        "bad_placement": 119,
+        "success": 223,
+        "drop_after_grasp": 44,
+        "failed_grasp": 6,
+        "bad_lift": 7,
+        "bad_transport": 1
+      },
+      "n_seeds": 2
+    },
+    {
+      "n": 400,
+      "success_count": 275,
+      "success_rate": 0.6875,
+      "success_ci95_bootstrap": [
+        0.6425,
+        0.7325
+      ],
+      "success_ci95_wilson": [
+        0.6404735607938833,
+        0.7309591989812364
+      ],
+      "mean_return": 15.643005051465588,
+      "return_ci95": [
+        15.00693476353865,
+        16.27683475560779
+      ],
+      "mean_length": 34.5,
+      "mean_latency_s": 0.06571679849938517,
+      "p95_latency_s": 0.12210673006484281,
+      "method": "Ensemble WM",
+      "seed_success_rates": [
+        0.695,
+        0.68
+      ],
+      "seed_mean": 0.6875,
+      "seed_std": 0.007499999999999951,
+      "failure_counts": {
+        "bad_placement": 87,
+        "success": 275,
+        "bad_lift": 3,
+        "drop_after_grasp": 29,
+        "bad_transport": 3,
+        "failed_grasp": 3
+      },
+      "n_seeds": 2
+    },
+    {
+      "n": 400,
+      "success_count": 295,
+      "success_rate": 0.7375,
+      "success_ci95_bootstrap": [
+        0.6925,
+        0.78
+      ],
+      "success_ci95_wilson": [
+        0.69226759360591,
+        0.7782139021092418
+      ],
+      "mean_return": 13.70591017249727,
+      "return_ci95": [
+        13.096743048057188,
+        14.323847197521472
+      ],
+      "mean_length": 31.0925,
+      "mean_latency_s": 0.06122935215908939,
+      "p95_latency_s": 0.10206995997577901,
+      "method": "Uncertainty MPC",
+      "seed_success_rates": [
+        0.745,
+        0.73
+      ],
+      "seed_mean": 0.7375,
+      "seed_std": 0.007500000000000007,
+      "failure_counts": {
+        "bad_placement": 65,
+        "drop_after_grasp": 29,
+        "success": 295,
+        "failed_grasp": 5,
+        "bad_lift": 4,
+        "bad_transport": 2
+      },
+      "n_seeds": 2
+    },
+    {
+      "n": 400,
+      "success_count": 246,
+      "success_rate": 0.615,
+      "success_ci95_bootstrap": [
+        0.5675,
+        0.6625
+      ],
+      "success_ci95_wilson": [
+        0.5664344525867856,
+        0.6613776400752879
+      ],
+      "mean_return": 15.795770215715747,
+      "return_ci95": [
+        15.12857095932908,
+        16.486502841485606
+      ],
+      "mean_length": 34.5575,
+      "mean_latency_s": 0.357077126550363,
+      "p95_latency_s": 0.0859463300090283,
+      "method": "Full method",
+      "seed_success_rates": [
+        0.615,
+        0.615
+      ],
+      "seed_mean": 0.615,
+      "seed_std": 0.0,
+      "failure_counts": {
+        "bad_placement": 121,
+        "success": 246,
+        "drop_after_grasp": 24,
+        "bad_lift": 4,
+        "bad_transport": 4,
+        "failed_grasp": 1
+      },
+      "n_seeds": 2
+    },
+    {
+      "n": 200,
+      "success_count": 139,
+      "success_rate": 0.695,
+      "success_ci95_bootstrap": [
+        0.63,
+        0.76
+      ],
+      "success_ci95_wilson": [
+        0.6280132012185453,
+        0.7546368564733095
+      ],
+      "mean_return": 14.648177794562653,
+      "return_ci95": [
+        13.687107105997391,
+        15.61211330952798
+      ],
+      "mean_length": 32.0,
+      "mean_latency_s": 0.0804004244369753,
+      "p95_latency_s": 0.14385737003176471,
+      "method": "Adaptive-H TRUST-WM",
+      "seed_success_rates": [
+        0.695
+      ],
+      "seed_mean": 0.695,
+      "seed_std": 0.0,
+      "failure_counts": {
+        "bad_placement": 49,
+        "success": 139,
+        "bad_lift": 5,
+        "drop_after_grasp": 6,
+        "bad_transport": 1
+      },
+      "n_seeds": 1
+    }
+  ],
+  "horizon": [],
+  "lambda_sweep": [],
+  "ood": {},
+  "tests": {},
+  "figures": {},
+  "calibration": {
+    "lambda": 14.724678625870872,
+    "u_mean": 0.0033211195841431618,
+    "u_median": 0.0012588821118697524,
+    "u_q": 0.006791319698095322,
+    "adaptive_thresholds": [
+      0.000878812454175204,
+      0.002383059123530984,
+      0.006791319698095322
+    ],
+    "adaptive_quantiles": [
+      0.4,
+      0.7,
+      0.9
+    ],
+    "n": 1132
+  }
+}

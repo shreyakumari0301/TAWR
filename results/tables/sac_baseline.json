@@ -1,0 +1,17 @@
+{
+  "method": "sac",
+  "num_episodes": 25,
+  "success_rate": 0.56,
+  "success_count": 14,
+  "mean_return": 16.181122107803823,
+  "std_return": 8.338015983200089,
+  "mean_length": 33.32,
+  "mean_steps_to_success": 16.714285714285715,
+  "mean_latency_s": 0.0023231270093032543,
+  "checkpoint": "checkpoints/sac_best.pt",
+  "train_eval_at_80k": {
+    "num_episodes": 8,
+    "success_rate": 0.75,
+    "mean_return": 12.774133794941008
+  }
+}

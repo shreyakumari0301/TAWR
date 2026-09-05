@@ -1,0 +1,13 @@
+{
+  "path": "C:\\Users\\SK\\TAWR\\data\\transitions_random.npz",
+  "num_transitions": 5000,
+  "num_episodes": 100,
+  "obs_dim": 42,
+  "action_dim": 4,
+  "success_rate_at_transition": 0.0,
+  "splits": {
+    "train": 4000,
+    "val": 500,
+    "test": 500
+  }
+}

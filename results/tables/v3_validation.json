@@ -1,0 +1,259 @@
+{
+  "episodes": 200,
+  "seeds": [
+    2,
+    3,
+    4
+  ],
+  "matrix": [
+    {
+      "n": 600,
+      "success_count": 414,
+      "success_rate": 0.69,
+      "success_ci95_bootstrap": [
+        0.6516666666666666,
+        0.7266666666666667
+      ],
+      "success_ci95_wilson": [
+        0.6518821733817679,
+        0.725700291953512
+      ],
+      "mean_return": 13.303701793656995,
+      "return_ci95": [
+        12.700487150403514,
+        13.909503097180432
+      ],
+      "mean_length": 28.703333333333333,
+      "mean_latency_s": 0.0007821553651362527,
+      "p95_latency_s": 0.0011131650884635739,
+      "method": "SAC",
+      "seed_success_rates": [
+        0.72,
+        0.675,
+        0.675
+      ],
+      "seed_mean": 0.6900000000000001,
+      "seed_std": 0.021213203435596392,
+      "failure_counts": {
+        "drop_after_grasp": 26,
+        "success": 414,
+        "bad_placement": 136,
+        "bad_lift": 20,
+        "bad_transport": 1,
+        "failed_grasp": 3
+      },
+      "n_seeds": 3
+    },
+    {
+      "n": 400,
+      "success_count": 1,
+      "success_rate": 0.0025,
+      "success_ci95_bootstrap": [
+        0.0,
+        0.0075
+      ],
+      "success_ci95_wilson": [
+        0.00044143642943440895,
+        0.014023640967247855
+      ],
+      "mean_return": 2.403186011874733,
+      "return_ci95": [
+        2.285034722036235,
+        2.5266261469890967
+      ],
+      "mean_length": 50.0,
+      "mean_latency_s": 0.010010510514839553,
+      "p95_latency_s": 0.011944404913811007,
+      "method": "Single WM-MPC",
+      "seed_success_rates": [
+        0.005,
+        0.0
+      ],
+      "seed_mean": 0.0025,
+      "seed_std": 0.0025,
+      "failure_counts": {
+        "failed_grasp": 56,
+        "failed_approach": 342,
+        "success": 1,
+        "bad_lift": 1
+      },
+      "n_seeds": 2
+    },
+    {
+      "n": 400,
+      "success_count": 231,
+      "success_rate": 0.5775,
+      "success_ci95_bootstrap": [
+        0.53,
+        0.625
+      ],
+      "success_ci95_wilson": [
+        0.5285801141391775,
+        0.624945426567872
+      ],
+      "mean_return": 15.705439660000048,
+      "return_ci95": [
+        15.031881071297251,
+        16.388182222579104
+      ],
+      "mean_length": 36.65,
+      "mean_latency_s": 0.010685467448798332,
+      "p95_latency_s": 0.016665495006600386,
+      "method": "Policy-guided WM",
+      "seed_success_rates": [
+        0.6,
+        0.555
+      ],
+      "seed_mean": 0.5775,
+      "seed_std": 0.022499999999999964,
+      "failure_counts": {
+        "drop_after_grasp": 43,
+        "bad_placement": 109,
+        "success": 231,
+        "bad_lift": 7,
+        "bad_transport": 4,
+        "failed_grasp": 6
+      },
+      "n_seeds": 2
+    },
+    {
+      "n": 400,
+      "success_count": 243,
+      "success_rate": 0.6075,
+      "success_ci95_bootstrap": [
+        0.56,
+        0.655
+      ],
+      "success_ci95_wilson": [
+        0.5588404787053632,
+        0.6541143035657054
+      ],
+      "mean_return": 15.883957122593559,
+      "return_ci95": [
+        15.204805368959578,
+        16.57785657522259
+      ],
+      "mean_length": 35.6625,
+      "mean_latency_s": 0.06485054323920125,
+      "p95_latency_s": 0.13214319997932758,
+      "method": "Ensemble WM",
+      "seed_success_rates": [
+        0.6,
+        0.615
+      ],
+      "seed_mean": 0.6074999999999999,
+      "seed_std": 0.007500000000000007,
+      "failure_counts": {
+        "drop_after_grasp": 34,
+        "success": 243,
+        "failed_grasp": 3,
+        "bad_placement": 117,
+        "bad_lift": 2,
+        "bad_transport": 1
+      },
+      "n_seeds": 2
+    },
+    {
+      "n": 400,
+      "success_count": 272,
+      "success_rate": 0.68,
+      "success_ci95_bootstrap": [
+        0.635,
+        0.725
+      ],
+      "success_ci95_wilson": [
+        0.6327588055173099,
+        0.7238166438668052
+      ],
+      "mean_return": 13.937916356154055,
+      "return_ci95": [
+        13.274546118391541,
+        14.595173879702955
+      ],
+      "mean_length": 31.985,
+      "mean_latency_s": 0.0700952677739253,
+      "p95_latency_s": 0.19970378001453162,
+      "method": "Uncertainty MPC",
+      "seed_success_rates": [
+        0.675,
+        0.685
+      ],
+      "seed_mean": 0.68,
+      "seed_std": 0.0050000000000000044,
+      "failure_counts": {
+        "success": 272,
+        "drop_after_grasp": 26,
+        "bad_placement": 88,
+        "failed_grasp": 8,
+        "bad_lift": 4,
+        "bad_transport": 2
+      },
+      "n_seeds": 2
+    },
+    {
+      "n": 400,
+      "success_count": 255,
+      "success_rate": 0.6375,
+      "success_ci95_bootstrap": [
+        0.59,
+        0.685
+      ],
+      "success_ci95_wilson": [
+        0.589287613174928,
+        0.6830964106601597
+      ],
+      "mean_return": 15.428132904712111,
+      "return_ci95": [
+        14.741041814349591,
+        16.10417896642908
+      ],
+      "mean_length": 33.965,
+      "mean_latency_s": 0.06445863672886065,
+      "p95_latency_s": 0.1430141999735497,
+      "method": "Full method",
+      "seed_success_rates": [
+        0.67,
+        0.605
+      ],
+      "seed_mean": 0.6375,
+      "seed_std": 0.03250000000000003,
+      "failure_counts": {
+        "success": 255,
+        "bad_placement": 109,
+        "drop_after_grasp": 29,
+        "bad_transport": 3,
+        "bad_lift": 4
+      },
+      "n_seeds": 2
+    }
+  ],
+  "horizon": [],
+  "ood": {},
+  "tests": {},
+  "architecture": {
+    "final": "policy-guided proposals + H=3 + ensemble dynamics + R-\u03bbU",
+    "dropped": [
+      "V_SAC terminal value",
+      "DAgger",
+      "Adaptive-H"
+    ],
+    "reason": "seed-0: Uncertainty MPC 74.5% vs Full+V 61.5% vs Adaptive-H 69.5%"
+  },
+  "calibration": {
+    "lambda": 14.724678625870872,
+    "u_mean": 0.0033211195841431618,
+    "u_median": 0.0012588821118697524,
+    "u_q": 0.006791319698095322,
+    "adaptive_thresholds": [
+      0.000878812454175204,
+      0.002383059123530984,
+      0.006791319698095322
+    ],
+    "adaptive_quantiles": [
+      0.4,
+      0.7,
+      0.9
+    ],
+    "n": 1132
+  }
+}

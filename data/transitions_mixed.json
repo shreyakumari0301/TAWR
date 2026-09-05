@@ -1,0 +1,16 @@
+{
+  "path": "C:\\Users\\SK\\TAWR\\data\\transitions_mixed.npz",
+  "num_transitions": 12000,
+  "num_episodes": 339,
+  "sources": {
+    "random": 4800,
+    "partial_sac": 3600,
+    "sac": 3600
+  },
+  "splits": {
+    "train": 9667,
+    "val": 1132,
+    "test": 1201
+  },
+  "used_policy": true
+}

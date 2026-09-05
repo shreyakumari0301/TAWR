@@ -1,0 +1,14 @@
+# MLP dynamics: predict Δo, per-dim obs norm, weighted cube/EE loss, 5-member ensemble.
+hidden_sizes: [512, 512, 256]
+predict_delta: true
+loss: weighted_mse
+lr: 1.0e-3
+batch_size: 256
+epochs: 20
+weight_decay: 1.0e-5
+ensemble_size: 5
+seed: 0
+train_split: 0.8
+val_split: 0.1
+test_split: 0.1
+checkpoint_path: checkpoints/world_model_v2.pt

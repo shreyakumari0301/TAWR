@@ -1,0 +1,424 @@
+{
+  "uncertainty_calibration": {
+    "figure": "C:\\Users\\SK\\TAWR\\results\\figures\\v3_uncertainty_vs_error.png",
+    "error_kind": "cube",
+    "corr_u_vs_error": 0.43923605125989684,
+    "corr_u_vs_cube_error": 0.43923605125989684,
+    "n": 6237,
+    "quintiles": [
+      {
+        "u_lo": 0.00011829253344330937,
+        "u_hi": 0.00042948608752340077,
+        "mean_u": 0.00031542739594815665,
+        "mean_cube_err_cm": 0.6393347264992582,
+        "n": 1248
+      },
+      {
+        "u_lo": 0.00042948608752340077,
+        "u_hi": 0.0006498551345430314,
+        "mean_u": 0.0005358509618453622,
+        "mean_cube_err_cm": 0.7483830856687352,
+        "n": 1247
+      },
+      {
+        "u_lo": 0.0006498551345430314,
+        "u_hi": 0.0009936166694387795,
+        "mean_u": 0.0007997386065743409,
+        "mean_cube_err_cm": 0.7744083701951822,
+        "n": 1247
+      },
+      {
+        "u_lo": 0.0009936166694387795,
+        "u_hi": 0.0020979570224881174,
+        "mean_u": 0.0013670133863319587,
+        "mean_cube_err_cm": 0.8734447683243912,
+        "n": 1247
+      },
+      {
+        "u_lo": 0.0020979570224881174,
+        "u_hi": 0.22720211744308472,
+        "mean_u": 0.01578100340292365,
+        "mean_cube_err_cm": 1.6636101309557443,
+        "n": 1248
+      }
+    ],
+    "corr_predicted_vs_actual_return": 0.07845913044561277
+  },
+  "single_wm_exploitation": {
+    "figure": "C:\\Users\\SK\\TAWR\\results\\figures\\v3_action_deviation.png",
+    "rows": [
+      {
+        "method": "Single WM-MPC",
+        "success_rate": 0.01,
+        "mean_return": 2.4452977034540244,
+        "mean_action_deviation": 1.8835580450728537,
+        "p95_action_deviation": 2.086190218806267
+      },
+      {
+        "method": "Policy-guided WM",
+        "success_rate": 0.565,
+        "mean_return": 15.532109939881558,
+        "mean_action_deviation": 0.3206672038824712,
+        "p95_action_deviation": 0.3599071108996868
+      },
+      {
+        "method": "Ensemble WM",
+        "success_rate": 0.695,
+        "mean_return": 15.946536616012454,
+        "mean_action_deviation": 0.3145115113101991,
+        "p95_action_deviation": 0.35719043580442666
+      },
+      {
+        "method": "Uncertainty MPC",
+        "success_rate": 0.745,
+        "mean_return": 13.637483677268028,
+        "mean_action_deviation": 0.27844062447293655,
+        "p95_action_deviation": 0.3251978514170406
+      },
+      {
+        "method": "SAC",
+        "success_rate": 0.645,
+        "mean_return": 14.24884993577376,
+        "mean_action_deviation": 0.0,
+        "p95_action_deviation": 0.0
+      }
+    ]
+  },
+  "seed0_matrix": "C:\\Users\\SK\\TAWR\\results\\figures\\v3_success_ci.png",
+  "sac_vs_uncertainty_seed0": {
+    "n01": 26,
+    "n10": 46,
+    "n11": 103,
+    "n00": 25,
+    "p_value": 0.02446090732832437
+  },
+  "sac_seed0": {
+    "n": 200,
+    "success_count": 129,
+    "success_rate": 0.645,
+    "success_ci95_bootstrap": [
+      0.575,
+      0.715
+    ],
+    "success_ci95_wilson": [
+      0.5765198448160798,
+      0.7080148134676072
+    ],
+    "mean_return": 14.24884993577376,
+    "return_ci95": [
+      13.13512348523317,
+      15.355262641768903
+    ],
+    "mean_length": 30.125,
+    "mean_latency_s": 0.001609424530814452,
+    "p95_latency_s": 0.004794799978844824
+  },
+  "uncertainty_seed0": {
+    "n": 200,
+    "success_count": 149,
+    "success_rate": 0.745,
+    "success_ci95_bootstrap": [
+      0.685,
+      0.805
+    ],
+    "success_ci95_wilson": [
+      0.6803694869280502,
+      0.8003959701719726
+    ],
+    "mean_return": 13.637483677268028,
+    "return_ci95": [
+      12.777446323601529,
+      14.522895905256272
+    ],
+    "mean_length": 31.185,
+    "mean_latency_s": 0.06219022180488999,
+    "p95_latency_s": 0.12771558004897085
+  },
+  "uncertainty_pred_vs_actual": {
+    "figure": "C:\\Users\\SK\\TAWR\\results\\figures\\v3_uncertainty_pred_vs_actual.png",
+    "corr": 0.07845913044561277,
+    "n": 6237
+  },
+  "seed_aggregate": {
+    "methods": [
+      {
+        "n": 200,
+        "success_count": 129,
+        "success_rate": 0.645,
+        "success_ci95_bootstrap": [
+          0.575,
+          0.715
+        ],
+        "success_ci95_wilson": [
+          0.5765198448160798,
+          0.7080148134676072
+        ],
+        "mean_return": 14.24884993577376,
+        "return_ci95": [
+          13.13512348523317,
+          15.355262641768903
+        ],
+        "mean_length": 1.0,
+        "method": "SAC",
+        "seeds": [
+          0
+        ],
+        "n_seeds": 1,
+        "seed_success_rates": [
+          0.645
+        ],
+        "seed_mean": 0.645,
+        "seed_std": 0.0
+      },
+      {
+        "n": 200,
+        "success_count": 2,
+        "success_rate": 0.01,
+        "success_ci95_bootstrap": [
+          0.0,
+          0.025
+        ],
+        "success_ci95_wilson": [
+          0.0027466006037749346,
+          0.03572248519617954
+        ],
+        "mean_return": 2.4452977034540244,
+        "return_ci95": [
+          2.291557050722543,
+          2.600668119235865
+        ],
+        "mean_length": 1.0,
+        "method": "Single WM-MPC",
+        "seeds": [
+          0
+        ],
+        "n_seeds": 1,
+        "seed_success_rates": [
+          0.01
+        ],
+        "seed_mean": 0.01,
+        "seed_std": 0.0
+      },
+      {
+        "n": 200,
+        "success_count": 113,
+        "success_rate": 0.565,
+        "success_ci95_bootstrap": [
+          0.495,
+          0.635
+        ],
+        "success_ci95_wilson": [
+          0.4957060908195922,
+          0.631843928411026
+        ],
+        "mean_return": 15.532109939881558,
+        "return_ci95": [
+          14.575257952877894,
+          16.49585137324783
+        ],
+        "mean_length": 1.0,
+        "method": "Policy-guided WM",
+        "seeds": [
+          0
+        ],
+        "n_seeds": 1,
+        "seed_success_rates": [
+          0.565
+        ],
+        "seed_mean": 0.565,
+        "seed_std": 0.0
+      },
+      {
+        "n": 200,
+        "success_count": 139,
+        "success_rate": 0.695,
+        "success_ci95_bootstrap": [
+          0.63,
+          0.76
+        ],
+        "success_ci95_wilson": [
+          0.6280132012185453,
+          0.7546368564733095
+        ],
+        "mean_return": 15.946536616012454,
+        "return_ci95": [
+          15.058050956767984,
+          16.861624047930352
+        ],
+        "mean_length": 1.0,
+        "method": "Ensemble WM",
+        "seeds": [
+          0
+        ],
+        "n_seeds": 1,
+        "seed_success_rates": [
+          0.695
+        ],
+        "seed_mean": 0.695,
+        "seed_std": 0.0
+      },
+      {
+        "n": 200,
+        "success_count": 149,
+        "success_rate": 0.745,
+        "success_ci95_bootstrap": [
+          0.685,
+          0.805
+        ],
+        "success_ci95_wilson": [
+          0.6803694869280502,
+          0.8003959701719726
+        ],
+        "mean_return": 13.637483677268028,
+        "return_ci95": [
+          12.777446323601529,
+          14.522895905256272
+        ],
+        "mean_length": 1.0,
+        "method": "Uncertainty MPC",
+        "seeds": [
+          0
+        ],
+        "n_seeds": 1,
+        "seed_success_rates": [
+          0.745
+        ],
+        "seed_mean": 0.745,
+        "seed_std": 0.0
+      },
+      {
+        "n": 200,
+        "success_count": 123,
+        "success_rate": 0.615,
+        "success_ci95_bootstrap": [
+          0.545,
+          0.68
+        ],
+        "success_ci95_wilson": [
+          0.5459973878179245,
+          0.6796680308208618
+        ],
+        "mean_return": 15.923516967780888,
+        "return_ci95": [
+          14.986250895030796,
+          16.866895237584597
+        ],
+        "mean_length": 1.0,
+        "method": "Full + V_SAC",
+        "seeds": [
+          0
+        ],
+        "n_seeds": 1,
+        "seed_success_rates": [
+          0.615
+        ],
+        "seed_mean": 0.615,
+        "seed_std": 0.0
+      },
+      {
+        "n": 200,
+        "success_count": 139,
+        "success_rate": 0.695,
+        "success_ci95_bootstrap": [
+          0.63,
+          0.76
+        ],
+        "success_ci95_wilson": [
+          0.6280132012185453,
+          0.7546368564733095
+        ],
+        "mean_return": 14.648177794562653,
+        "return_ci95": [
+          13.687107105997391,
+          15.61211330952798
+        ],
+        "mean_length": 1.0,
+        "method": "Adaptive-H",
+        "seeds": [
+          0
+        ],
+        "n_seeds": 1,
+        "seed_success_rates": [
+          0.695
+        ],
+        "seed_mean": 0.695,
+        "seed_std": 0.0
+      }
+    ],
+    "paired_tests": {
+      "sac_vs_uncertainty_s0": {
+        "n01": 26,
+        "n10": 46,
+        "n11": 103,
+        "n00": 25,
+        "p_value": 0.02446090732832437
+      },
+      "uncertainty_vs_vsac_s0": {
+        "n01": 46,
+        "n10": 20,
+        "n11": 103,
+        "n00": 31,
+        "p_value": 0.0018582303075658085
+      }
+    }
+  },
+  "latency": {
+    "rows": [
+      {
+        "ensemble_size": 1,
+        "K": 16,
+        "mean_latency_ms": 25.468937499681488,
+        "p95_latency_ms": 41.48349000606686
+      },
+      {
+        "ensemble_size": 1,
+        "K": 32,
+        "mean_latency_ms": 20.82400250073988,
+        "p95_latency_ms": 25.36016992526127
+      },
+      {
+        "ensemble_size": 1,
+        "K": 64,
+        "mean_latency_ms": 27.715735013771337,
+        "p95_latency_ms": 50.18129496602338
+      },
+      {
+        "ensemble_size": 3,
+        "K": 16,
+        "mean_latency_ms": 39.39505125163123,
+        "p95_latency_ms": 82.5260649784468
+      },
+      {
+        "ensemble_size": 3,
+        "K": 32,
+        "mean_latency_ms": 82.0625474996632,
+        "p95_latency_ms": 133.01858505583365
+      },
+      {
+        "ensemble_size": 3,
+        "K": 64,
+        "mean_latency_ms": 92.23631499771727,
+        "p95_latency_ms": 130.65083997789768
+      },
+      {
+        "ensemble_size": 5,
+        "K": 16,
+        "mean_latency_ms": 96.89120624680072,
+        "p95_latency_ms": 156.20932499296032
+      },
+      {
+        "ensemble_size": 5,
+        "K": 32,
+        "mean_latency_ms": 121.21074000315275,
+        "p95_latency_ms": 207.53768506110646
+      },
+      {
+        "ensemble_size": 5,
+        "K": 64,
+        "mean_latency_ms": 134.02546750585316,
+        "p95_latency_ms": 200.56566505809312
+      }
+    ],
+    "figure": "C:\\Users\\SK\\TAWR\\results\\figures\\v3_latency.png"
+  }
+}

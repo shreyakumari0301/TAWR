@@ -1,0 +1,9 @@
+# V3: multi-seed confirmation + Adaptive-H TRUST-WM.
+episodes: 200
+seeds: [0, 1, 2, 3, 4]
+lambda_values: [0.0, 5.0, 14.72, 30.0, 60.0]
+adaptive_quantiles: [0.40, 0.70, 0.90]
+horizon_schedule: [4, 3, 2, 1]
+policy: checkpoints/sac_best.pt
+world_model: checkpoints/world_model_v2.pt
+data: data/transitions_mixed.npz

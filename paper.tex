@@ -1,0 +1,443 @@
+%-------------------------
+% Resume in Latex
+% Author : Matty
+% Based on: [https://github.com/jakegut/resume](https://github.com/jakegut/resume) (which was based on https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+
+\usepackage{tabularx,array,xcolor} % preamble
+% Define a command for Hugging Face logo
+\newcommand{\faHuggingFace}{%
+    \includegraphics[height=1em]{huggingface-logo.png}%
+}
+
+\input{glyphtounicode}
+
+% -------------------- FONT --------------------
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Add page numbers at the bottom center
+\fancyfoot[C]{\thepage}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.9in} % Adjusted top margin for image
+\addtolength{\textheight}{1.0in}
+
+\setlength{\footskip}{15pt} % Adjust the footer size here for page numbers
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\usepackage{graphicx}  % Add this line for image support
+\usepackage{tabularx}  % in preamble
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% NEW: Custom command for projects with horizontal line
+\newcommand{\projectWithLine}[3]{
+    \vspace{0.3em}
+    \textbf{\textcolor[HTML]{4775BA}{#1}} \faGithub \textbar\ \textit{#2} \\
+    \rule{0.97\textwidth}{0.3pt}
+    \vspace{0.2em}
+    #3
+    \vspace{0.5em}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{15pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+\thispagestyle{empty}
+
+% -------------------- IMAGE --------------------
+% Add image at the top right
+\begin{picture}(0,0)
+  \put(\textwidth -560,-75){\includegraphics[width=85pt]{logo.png}}
+\end{picture}
+
+% -------------------- HEADING--------------------
+\begin{center}
+    \textbf{\Huge \scshape SHREYA KUMARI} \\ \vspace{10pt}
+    \textbf{\scshape Chennai, Tamil Nadu, India} \\ \vspace{10pt}
+    \small 
+    \faIcon{whatsapp}
+    \href{https://wa.me/9566213052}{\underline{+91 9566213052}} $ $
+    \faIcon{github}
+    \href{https://github.com/shreyakumari0301}{\underline{shreyakumari0301}} $ $
+    \faIcon{linkedin}
+    \href{https://www.linkedin.com/in/shreyakumari0301/}{\underline{shreyakumari0301}} $ $
+    \faIcon{envelope}
+    \href{mailto:23f2003785@ds.study.iitm.ac.in}
+    {\underline{23f2003785@ds.study.iitm.ac.in}} \vspace{-2pt}
+\end{center}
+% -------------------- SUMMARY --------------------
+\vspace{-0.85em}
+\section{\textbf{SUMMARY}}
+\noindent
+\textit{Applied AI researcher working at the intersection of world models, autonomous experimentation, multimodal agents, and robotic systems. Experience building learned world models for multi-step simulation and planning, autonomous laboratory workflows with ROS-based robotic control, and inference-time reasoning agents. Interested in World Action Models, embodied decision-making, robot learning, and closed-loop autonomous systems.}
+
+% -------------------- EDUCATION --------------------
+\section{\textbf{EDUCATION}}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {\textcolor[HTML]{4775BA}{Indian Institute of Technology Madras}}{ 2023 - Sept, 2026}
+  {4th Year, B.S. Bachelor of Science in Data Science and Applications}{CGPA: 8.49/10}
+
+% \resumeSubheading
+%   {\textcolor[HTML]{4775BA}{Devi Academy Senior Secondary School (CBSE), Chennai}}{2022 - 2023}
+%   {Class 12 (AISSCE)}{Percentage : 90.2\%}
+
+\resumeSubHeadingListEnd
+
+
+
+
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+% -------------------- PUBLICATIONS --------------------
+\section{\textbf{PUBLICATIONS}}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {\textcolor[HTML]{4775BA}{ViTA: Visual Tool Synthesis for Self-Evolving Agents}}{May 2026}
+  {NeurIPS 2026 Conference Submission (Under Review)}{}
+
+\vspace{-0.1em}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Authors:} Abhijit Das, Debasmita Biswas, Shreya Kumari, Nichula Sathmith Wasalathilaka, Dwarikanath Mahapatra, \textbf{Imran Razzak} \\
+    Proposed \textit{ViTA}, a framework enabling visual AI agents to dynamically synthesize new tools at inference time when existing capabilities are insufficient. Introduced behavioural-assertion validation, uncertainty-gated routing, and lifecycle-based tool management, achieving significant improvements across multiple visual reasoning benchmarks.
+    }}
+\end{itemize}
+
+\resumeSubHeadingListEnd
+% -------------------- RESEARCH INTERESTS --------------------
+% \vspace{-0.85em}
+% \section*{\textbf{INTERESTS}}
+
+% \noindent
+% \begin{tabularx}{\textwidth}{|Y|Y|}
+% \hline
+% \parbox[c]{\hsize}{\vspace{1mm}\centering 
+% \textbf{\textcolor[HTML]{4775BA}{Robust AI Systems}}\\
+% \small Uncertainty, ensemble reasoning, calibration\vspace{1mm}} 
+% &
+% \parbox[c]{\hsize}{\vspace{1mm}\centering 
+% \textbf{\textcolor[HTML]{4775BA}{LLMs \& Foundation Models}}\\
+% \small Transformers, instruction tuning, RAG, multimodal\vspace{1mm}} 
+% \\ \hline
+
+% \parbox[c]{\hsize}{\vspace{1mm}\centering 
+% \textbf{\textcolor[HTML]{4775BA}{Multimodal \& Knowledge Systems}}\\
+% \small Text + scientific data, structured extraction, reasoning\vspace{1mm}} 
+% &
+% \parbox[c]{\hsize}{\vspace{1mm}\centering 
+% \textbf{\textcolor[HTML]{4775BA}{AI for Scientific Discovery}}\\
+% \small Clinical/chemical modeling, simulation, scalable pipelines\vspace{1mm}} 
+% \\ \hline
+% \end{tabularx}
+
+% \vspace{0.5em}
+
+% % -------------------- COURSEWORK --------------------
+% \section{\textbf{COURSEWORK}}
+% \vspace{-0.05em}
+
+% \noindent
+% Machine Learning, Deep Learning, Large Language Models, Statistical Learning Theory, \\
+% Data Structures \& Algorithms, Database Systems, Software Engineering
+
+% \vspace{0.5em}
+
+% -------------------- EXPERIENCE --------------------
+\vspace{-0.85em}
+\section{\textbf{EXPERIENCE / INVOLVEMENT}}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{\textcolor[HTML]{4775BA}{Research Engineer}} $|$ \footnotesize\emph{MedOS Tech}\vspace{8pt}}{\textbf{\small{July, 2026 - Present}}}
+\resumeItemListStart
+\vspace{-0.5em}
+\resumeItem{Built \textbf{CTA-RAG}, routing CTI queries to 5 schema-specific RAG pipelines with a \texttt{gpt-4-turbo} router; on CTIBench full splits, improved over zero-shot GPT-4 by \textbf{+4.2\,pp MCQ} (75.2\%), \textbf{+6.1\,pp RCM} (78.1\%), \textbf{$-$0.25 VSP MAD} (1.06), and \textbf{+0.31 ATE F1} (0.945), with \textbf{$\geq$99.2\% routing accuracy}.}
+\vspace{-0.5em}
+\resumeItem{Designed an LLM memory knowledge-ops layer for consolidation, forgetting, prioritisation, and synthesis; raised retrieval accuracy \textbf{0.55$\rightarrow$0.99} while cutting stored entries by \textbf{9$\times$}.}
+\vspace{-0.5em}
+\resumeItem{Built an instrumented SWE-bench Verified harness for coding agents, logging repository knowledge layout, token cost, tool traces, and issue-resolution outcomes for architecture ablation studies.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{\textcolor[HTML]{4775BA}{Research Collaborator}} $|$ \footnotesize\emph{MBZUAI} (Guide: \textbf{Imran Razzak})\vspace{8pt}}{\textbf{\small{March, 2026 - June, 2026}}}
+\resumeItemListStart
+\vspace{-0.5em}
+\resumeItem{Built an \textbf{evidence-grounded world model for multi-step state-transition prediction}, generating \textbf{\textasciitilde3.6k training} and \textbf{\textasciitilde1.2k evaluation transitions} and evaluating predictive stability over \textbf{15-step rollouts}.}
+\vspace{-0.5em}
+\resumeItem{Developed an LLM-based rule compiler to extract \textbf{30+} typed simulator parameters from drug labels and literature, with \textbf{$\geq$64\%} field-confidence gating and pharmacology-based fallbacks.}
+\vspace{-0.5em}
+\resumeItem{Implemented held-out evaluation against \textbf{4 baselines} with \textbf{50+ automated tests}, enabling calibrated and reproducible simulation-based treatment response predictions.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{\textcolor[HTML]{4775BA}{Research Collaborator}} $|$ \footnotesize\emph{NUS} (Guide: \textbf{Cao Zhizhuang})\vspace{8pt}}{\textbf{\small{August, 2026 - Present}}}
+\resumeItemListStart
+\vspace{-0.5em}
+\resumeItem{Developing an \textbf{inference-time planning framework} combining a learned \textbf{value/Q world model} with an exact environment simulator to evaluate candidate actions through \textbf{future rollouts} before execution.}
+\vspace{-0.5em}
+\resumeItem{Designing \textbf{confidence-gated action selection} to override the base policy only when predicted rollout advantages are sufficiently reliable.}
+\vspace{-0.5em}
+\resumeItem{Training \textbf{ranking-oriented world models} using policy-prefix conditioning and pairwise objectives, with evaluation based on \textbf{downstream rollout quality} rather than prediction error alone.}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{\textcolor[HTML]{4775BA}{ML Intern}} $|$ \footnotesize\emph{MI Lab, IIT Madras}\vspace{8pt}}{\textbf{\small{January, 2026 - July, 2026}}}
+\resumeItemListStart
+\vspace{-0.5em}
+\resumeItem{\hspace{0.8em}\textbf{2. Cooper Group – Autonomous Materials Discovery using Archemist}
+\begin{itemize}\setlength\itemsep{1pt}
+\vspace{-0.5em}
+\item Developed a \textbf{closed-loop autonomous experimentation system} integrating experiment planning, material fabrication, measurement, and iterative optimization for \textbf{conductivity, resistance, and transparency} across \textbf{25+ experiments and 12+ material batches}.
+\vspace{-0.2em}
+\item Extended the \textbf{Archemist robotic laboratory platform} with new experimental stations and \textbf{ROS-based robotic control}, enabling autonomous scheduling and execution and reducing experimental fabrication time from \textbf{\textasciitilde40 hours to 6--8 hours}.
+\end{itemize}
+}
+\vspace{-0.2em}
+
+\resumeItem{\hspace{0.8em}\textbf{1. Shell plc - CO\textsubscript{2} Capture and Decomposition Temperature Prediction for Ionic Liquids}
+\begin{itemize}\setlength\itemsep{1pt}
+\vspace{-0.5em}
+\item Enhanced TransChem with molecular representations, RFE-selected descriptors, and an MLP; used Optuna for hyperparameter optimization and benchmarked against classical ML models with RDKit descriptors.
+\vspace{-0.2em}
+\item Achieved \textbf{R\textsuperscript{2} = 0.85} for decomposition temperature (Td) prediction, outperforming the best classical ML baseline (\textbf{R\textsuperscript{2} = 0.81}), supporting data-driven screening of ionic liquids.
+\end{itemize}
+}
+\resumeItemListEnd
+
+
+
+\newpage
+\vspace*{1em}
+\resumeProjectHeading
+{\textbf{\textcolor[HTML]{4775BA}{Research Intern}} $|$ \footnotesize\emph{CIFIL Lab, IIT Madras}\vspace{8pt}}{\textbf{\small{July, 2025 - December, 2025}}}
+
+\vspace{-0.8em}
+\resumeItemListStart
+\resumeItem{Worked on \textbf{GuruSetu} (\href{https://gurusetu.iitm.ac.in}{\textcolor[HTML]{4775BA}{https://gurusetu.iitm.ac.in}}), building and deploying the full-stack system with database, backend APIs, and React frontend.}
+\vspace{-0.2em}
+\resumeItem{Conducted research on IPO prospectus data extraction, automating collection and analysis of \textbf{$\sim$1,500 documents} to enable large-scale financial insights.}
+\resumeItemListEnd
+
+\vspace{0.1em}
+
+\resumeProjectHeading
+{\textbf{\textcolor[HTML]{4775BA}{Quant Developer}} $|$ \footnotesize\emph{QuantHive, IIT Madras Research Park}\vspace{8pt}}{\textbf{\small{June, 2025}}}
+
+\vspace{-0.5em}
+\resumeItemListStart
+\resumeItem{Developed a modular \textbf{\href{https://github.com/shreyakumari0301/Event-Driven-Backtesting-Engine}{event-driven backtesting engine}} in Python with market, signal, order, and fill events for realistic strategy simulation.}
+\vspace{-0.2em}
+\resumeItem{Built GPU-accelerated kernels using CUDA, Numba, and CuPy, achieving \textbf{15$\times$ speedup} on \textbf{1M+ datapoints} for returns, SMA, and volatility calculations.}
+\vspace{-0.2em}
+\resumeItem{Added Sharpe ratio and annualized returns for scalable strategy performance evaluation.}
+\resumeItemListEnd
+
+\vspace{0.51em}
+
+\resumeSubHeadingListEnd
+% -------------------- PROJECTS --------------------
+% -------------------- PROJECTS --------------------
+\section{\textbf{PROJECTS}}
+\vspace{-0.5em}
+
+\begin{longtable}{|@{\hspace{0.6em}}p{\dimexpr\textwidth-1.2em\relax}@{\hspace{0.6em}}|}
+\hline
+
+\multicolumn{1}{|c|}{
+\hspace{0.4em}
+\href{https://github.com/shreyakumari0301/LLM-Council}{
+\textbf{\textcolor[HTML]{4775BA}{Cross-Model Reasoning in Large Language Models}}~\faGithub
+}
+$|$ \footnotesize\emph{Python, Groq, Ollama, Mistral}
+\hspace{0.4em}
+} \\
+\hline
+
+\begin{minipage}{\dimexpr\linewidth-1.2em\relax}
+\resumeItemListStart
+\vspace{0.5em}
+\resumeItem{Built a 3-model reasoning council (Groq, Ollama, Mistral) with a 3-stage generate--critique--synthesize pipeline, querying providers in parallel to produce diverse candidates and mitigate single-model failure.}
+
+\vspace{-0.15em}
+\resumeItem{Implemented cross-model agreement scoring using pairwise token-overlap (Jaccard) and 2-of-3 majority voting; responses with mean similarity \textbf{$\geq$0.60} are marked high-confidence and auto-selected.}
+
+\vspace{-0.15em}
+\resumeItem{Designed confidence-aware fallback that routes low-consensus responses to 2-pass sequential refinement or human review, with 60s/120s provider timeouts.}
+\resumeItemListEnd
+\end{minipage} \\
+\hline
+
+\multicolumn{1}{|c|}{
+\hspace{0.4em}
+\textbf{\textcolor[HTML]{4775BA}{Uncertainty-Aware World-Model Planning for Robotic Pick-and-Place}}
+$|$ \footnotesize\emph{Python, PyTorch, ManiSkill, SAC, MPC}
+\hspace{0.4em}
+} \\
+\hline
+
+\begin{minipage}{\dimexpr\linewidth-1.2em\relax}
+\resumeItemListStart
+\vspace{0.5em}
+\resumeItem{Built a short-horizon, policy-guided MPC planner over a learned ensemble dynamics model for ManiSkill \textbf{PickCube-v1}, asking when a robot should trust world-model rollouts over a model-free SAC policy.}
+
+\vspace{-0.15em}
+\resumeItem{\textbf{Interim V3} (200 episodes/seed; seeds 0--3, Uncertainty and Full still missing later seeds): naive single-model MPC \textbf{collapses} (\textbf{0.4\%} pooled). Policy-guided WM recovers to \textbf{56.8\%} but stays below SAC (\textbf{67.9 $\pm$ 3.1\%}). Ensemble WM (\textbf{64.8 $\pm$ 4.7\%}) is \textbf{not consistently} better than SAC.}
+
+\vspace{-0.15em}
+\resumeItem{Uncertainty-aware MPC ($R-\lambda U$) is the strongest model-based variant so far (\textbf{71.7 $\pm$ 3.7\%} pooled over 3 seeds) and beats ensemble-only planning by \textbf{$\sim$5--7.5\,pp} on each completed paired seed. The gain over SAC is \textbf{seed-dependent} (wins on seeds 0--1, loses on seed 2). Adding $V_{\mathrm{SAC}}$ does \textbf{not} help (\textbf{63.3\%}).}
+
+\vspace{-0.15em}
+\resumeItem{These results support planner exploitation of model error---not weak one-step prediction---as the main failure mode. Logged single-WM rollouts and uncertainty-vs-error diagnostics, plus seed 4, are still running before significance/robustness claims.}
+\resumeItemListEnd
+\end{minipage} \\
+\hline
+
+\end{longtable}
+  
+\vspace{1em}
+
+%-----------TECHNICAL SKILLS-----------
+\vspace{-1.8em}
+\section{\textbf{TECHNICAL SKILLS}}
+\resumeSubHeadingListStart
+{\item{
+\textbf{\textcolor[HTML]{4775BA}{Robotics \& Autonomous Systems}}: ROS, Laboratory Automation, Autonomous Experimentation, Simulation \\\\
+\textbf{\textcolor[HTML]{4775BA}{World Models \& Planning}}: World Models, Rollout Planning, Learned Value/Q Models, Policy Evaluation \\\\
+\textbf{\textcolor[HTML]{4775BA}{ML \& Multimodal AI}}: PyTorch, Transformers, HuggingFace \\\\
+\textbf{\textcolor[HTML]{4775BA}{LLM \& Agent Systems}}: RAG, Multi-Agent Systems, Tool Calling, LLM Reasoning, LangChain \\\\
+\textbf{\textcolor[HTML]{4775BA}{Scientific Computing}}: NumPy, Pandas, RDKit, CUDA, CuPy, Numba
+}}
+\resumeSubHeadingListEnd
+
+
+% % --------- ATS KEYWORD EMBEDDING (DO NOT REMOVE) ----------
+% {\color{white}\fontsize{1pt}{1pt}\selectfont
+% Artificial Intelligence Machine Learning Deep Learning
+% Bayesian Inference Probabilistic Modeling Gaussian Processes
+% Agentic AI Multi-Agent Systems LLM Reasoning
+% Natural Language Processing Computer Vision
+% Predictive Modeling Statistical Modeling
+% Uncertainty Quantification Explainable AI
+% Feature Engineering Model Evaluation
+% MLOps Model Deployment CI/CD
+% Python PyTorch TensorFlow Scikit-learn
+% LangChain LangGraph HuggingFace
+% FastAPI REST APIs Docker Linux Git
+% Knowledge Graphs Neo4j
+% Process Safety Risk Assessment
+% Fault Detection Hazard Identification
+% P\&ID Analysis Compliance Checking
+% Industrial AI Safety-Critical Systems
+% Time Series Analysis Anomaly Detection
+% Research Prototyping Experimental Design
+% }
+
+% --------- END ATS KEYWORDS ----------
+
+% -------------------- REFEREE DETAILS --------------------
+\section{\textbf{REFEREE DETAILS}}
+\vspace{0.4em}
+
+\begin{tabularx}{\textwidth}{|
+@{\hspace{0.4em}}X@{\hspace{0.8em}}|
+@{\hspace{0.8em}}X@{\hspace{0.4em}}|}
+\hline
+
+\textbf{\textcolor[HTML]{4775BA}{Prof. Rohit Batra}} &
+\textbf{\textcolor[HTML]{4775BA}{Prof. ThenMozhi M}} \\ \hline
+
+\textit{Assistant Professor, Department of Metallurgical and Materials Engineering; Affiliate Faculty in \textbf{Wadhwani School of AI (WSAI)}} &
+\textit{Professor, Department of Management Studies} \\
+
+IIT Madras &
+IIT Madras \\
+
+Email: \href{mailto:rbatra@smail.iitm.ac.in}{rbatra@smail.iitm.ac.in} &
+Email: \href{mailto:mtm@iitm.ac.in}{mtm@iitm.ac.in} \\
+
+Phone: +91 44 2257 4780 &
+Phone: +91 44 2257 4562 \\ \hline
+
+\end{tabularx}
+\end{document}
+-
